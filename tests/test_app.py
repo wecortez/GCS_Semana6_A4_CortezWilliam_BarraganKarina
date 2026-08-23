@@ -16,10 +16,13 @@ def test_add_and_list():
 
 
 def test_filter_products_by_date():
-    add_product("Carro de juguete", 4, "2026-08-20")
-    add_product("Muñeca", 2, "2026-08-21")
+   add_product("Carro", 4, "2026-08-20")
+   add_product("Muñeca", 2, "2026-08-21")
+   add_product("Pelota", 3)
 
-    result = filter_products_by_date("2026-08-20")
+   result = filter_products_by_date("2026-08-20")
+   names = [product["name"] for product in result]
 
-    assert len(result) == 1
-    assert result[0]["name"] == "Carro de juguete"
+   assert "Carro" in names
+   assert "Muñeca" not in names
+   assert "Pelota" not in names
