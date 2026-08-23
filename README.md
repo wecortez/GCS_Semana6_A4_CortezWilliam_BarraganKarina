@@ -31,3 +31,17 @@ la práctica de Gestión de Configuración del Software.
 - `v1.0.0`: línea base funcional.
 - `v1.0.1`: parche de configuración sensible.
 - `v1.1.0`: filtro por fecha y repositorio auditado.
+
+## Auditoría
+
+La auditoría utiliza `v1.1.0` como línea base.
+
+* Auditoría física: Issue #1.
+* Auditoría funcional: Issue #2.
+* Release planificado: `v1.1.1`.
+
+Ejecución de pruebas:
+
+```bash
+py -m pytest -q
+```
