@@ -45,3 +45,6 @@ Ejecución de pruebas:
 ```bash
 py -m pytest -q
 ```
+
+##Examen Parcial II GCS
+Elabore checklist de pre-release, justificando ítems.
